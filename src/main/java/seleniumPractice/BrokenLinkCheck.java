@@ -25,7 +25,7 @@ public class BrokenLinkCheck {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(2000));
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1500));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2000));
 		
 		driver.get("https://www.amazon.com");
 		
