@@ -28,7 +28,6 @@ public class BrokenLinkCheck {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2000));
 		
 		driver.get("https://www.amazon.com");
-		
 		List<WebElement> links = driver.findElements(By.tagName("a"));
 		System.out.println("No of link are: " + links.size());
 		List<String> urlList = new ArrayList<String>();
